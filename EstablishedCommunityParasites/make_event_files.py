@@ -17,9 +17,9 @@ for index, row in df.iterrows():
 	print mu
 	print rep
 	f = open("configs/event_{0}_{1}_{2}.cfg".format(parasites,env,rep), "w")
-    if parasites == 'parasites':
+	if parasites == 'parasites':
 		f.write("u begin LoadPopulation {0}_{1}_{2}_detail-300000.spop \nu 5000 InjectParasite parasite-smt.org ABB 0 400 \nu 0:100:end PrintHost PhenotypeData \nu 0:100:end PrintParasitePhenotypeData \nu u:100:end PrintHostTasksData \nu 0:100:end PrintParasiteTasksData \nu 1000:100:end DumpParasiteTaskGrid \nu 1000:100:end DumpHostTaskGrid \nu 0:100:end PrintParasiteData ParasiteData.dat \nu 0:100:end PrintAverageData \nu 0:100:end PrintTasksData \nu 0:100:end PrintCountData \nu 0:100:end PrintDominantData \nu 0:100:end PrintResourceData \nu 50000:50000:end SavePopulation \nu 300000 Exit \n".format(parasites,env,rep))
-    else:
-   		f.write("u begin LoadPopulation {0}_{1}_{2}_detail-300000.spop \nu 0:100:end PrintHost PhenotypeData \nu 0:100:end PrintParasitePhenotypeData \nu u:100:end PrintHostTasksData \nu 0:100:end PrintParasiteTasksData \nu 1000:100:end DumpParasiteTaskGrid \nu 1000:100:end DumpHostTaskGrid \nu 0:100:end PrintParasiteData ParasiteData.dat \nu 0:100:end PrintAverageData \nu 0:100:end PrintTasksData \nu 0:100:end PrintCountData \nu 0:100:end PrintDominantData \nu 0:100:end PrintResourceData \nu 50000:50000:end SavePopulation \nu 300000 Exit \n".format(parasites,env,rep))
+	else:
+		f.write("u begin LoadPopulation {0}_{1}_{2}_detail-300000.spop \nu 0:100:end PrintHost PhenotypeData \nu 0:100:end PrintParasitePhenotypeData \nu u:100:end PrintHostTasksData \nu 0:100:end PrintParasiteTasksData \nu 1000:100:end DumpParasiteTaskGrid \nu 1000:100:end DumpHostTaskGrid \nu 0:100:end PrintParasiteData ParasiteData.dat \nu 0:100:end PrintAverageData \nu 0:100:end PrintTasksData \nu 0:100:end PrintCountData \nu 0:100:end PrintDominantData \nu 0:100:end PrintResourceData \nu 50000:50000:end SavePopulation \nu 300000 Exit \n".format(parasites,env,rep))
 
 
